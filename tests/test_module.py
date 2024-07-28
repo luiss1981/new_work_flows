@@ -10,7 +10,7 @@ class TestModule(unittest.TestCase):
 
 
     def test_restar(self):
-        self.assertEqual(restar(2, 1), 0)
+        self.assertEqual(restar(2, 2), 0)
 
 
 if __name__ == '__main__':
