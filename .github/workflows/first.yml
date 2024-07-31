@@ -1,13 +1,13 @@
-name: my python app
+name: my python app                       # nombre del workflow
 
-on: [push, pull_request]
+on: [push, pull_request]                  # eventos que queremos que se ejecuten
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+jobs:                                     # jobs que hara wk workflow
+  build:                                  # nombre del job
+    runs-on: ubuntu-latest                # sobre que maquina correra el workflow
+    steps:                                # pasos a realizar
+    - name: Checkout code                 # nombre del paso
+      uses: actions/checkout@v2           # Action que usa el step   
 
     - name: Set up Python
       uses: actions/setup-python@v2
