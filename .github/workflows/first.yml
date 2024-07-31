@@ -21,6 +21,20 @@ jobs:                                     # jobs que hara wk workflow
       run : |
         python -m unittest discover -s tests
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy
+      run: echo "Deploying the application"
+
+
+
+# para que dos jobs se ejecuten secuencialmente debemos poner el
+# keyword "needs" y el job que debe esperar a que termine
 
 
  
