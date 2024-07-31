@@ -1,5 +1,5 @@
 import unittest
-from app import sumar, restar, multiplicar, calcular_media
+from app import sumar, restar, multiplicar, calcular_media, saludo
 
 
 
@@ -20,6 +20,9 @@ class TestModule(unittest.TestCase):
     def test_calcular_media(self):
         self.assertEqual(calcular_media([1, 2, 3, 4, 5]), 3)
 
+
+    def test_saludo(self):
+        self.assertEqual(saludo('Mundo'), 'Hola Mundo!')
 
 if __name__ == '__main__':
     unittest.main()

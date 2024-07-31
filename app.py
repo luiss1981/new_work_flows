@@ -12,3 +12,7 @@ def multiplicar(x, y):
 
 def calcular_media(valores):
     return sum(valores) / len(valores)
+
+
+def saludo(nombre):
+    return f'Hola {nombre}!'
